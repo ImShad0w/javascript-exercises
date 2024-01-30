@@ -1,5 +1,14 @@
 const sumAll = function (startNum, endNum) {
   let sumResult = 0;
+  //Return error if the numbers are negative
+  if (startNum < 0) {
+    return "ERROR";
+  }
+  //Return error if the values are not numbers
+  if (typeof startNum === "string" || typeof endNum === "string") {
+    return "ERROR";
+  }
+
   //If the first number is bigger switch places
   if (startNum > endNum) {
     const swap = startNum;
