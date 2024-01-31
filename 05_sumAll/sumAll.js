@@ -5,7 +5,7 @@ const sumAll = function (startNum, endNum) {
     return "ERROR";
   }
   //Return error if the values are not numbers
-  if (typeof startNum === "string" || typeof endNum === "string") {
+  if (typeof startNum !== "number" || typeof endNum !== "number") {
     return "ERROR";
   }
 
